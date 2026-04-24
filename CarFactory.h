@@ -2,7 +2,7 @@
 #include "Car.h"
 #include "GasolineEngine.h"
 #include "ElectronicEngine.h"
-#include "MixedHybridEngine.h"
+#include "HybridEngine.h"
 
 class CarFactory {
 public:
@@ -15,7 +15,7 @@ public:
     }
 
     static Car* createHybridCar() {
-        return new Car(new MixedHybridEngine());
+        return new Car(new HybridEngine());
     }
 
     static void replaceEngine(Car* car, Engine* newEngine) {
