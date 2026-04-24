@@ -4,7 +4,7 @@
 #include "ElectronicEngine.h" 
 using namespace std;
 
-class MixedHybridEngine : public Engine {
+class HybridEngine : public Engine {
 private:
     GasolineEngine gas;
     ElectronicEngine electric;
